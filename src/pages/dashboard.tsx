@@ -17,7 +17,9 @@ const PAGE_TITLE = 'Dashboard';
 const PAGE_DESCRIPTION =
   'This is my personal dashboard, built with Next.js API routes deployed as serverless functions.';
 
-const DashboardPage: NextPage<DashboardPageProps> = ({ fallback }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const DashboardPage: NextPage<DashboardPageProps> = ({
+  fallback,
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <SWRConfig value={{ fallback }}>
       <NextSeo title={`${PAGE_TITLE} - Kevin Saputra`} />
