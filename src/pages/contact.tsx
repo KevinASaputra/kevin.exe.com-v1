@@ -9,10 +9,10 @@ const PAGE_TITLE = 'Contact';
 const PAGE_DESCRIPTION =
   "Feel free to get in touch and let's have a discussion about how we can work together.";
 
-const ContactPage: NextPage = () => {
+const ContactPage: NextPage = (props) => {
   return (
     <>
-      <NextSeo title={`${PAGE_TITLE} - Ryan Aulia`} />
+      <NextSeo title={`${PAGE_TITLE} - Kevin Saputra`} />
       <Container data-aos='fade-up'>
         <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
         <Contact />
